@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Convite Especial</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #fbd3e9, #bb377d);
+      color: #333;
+      text-align: center;
+      padding: 50px;
+    }
+
+    .convite {
+      background-color: white;
+      border-radius: 15px;
+      padding: 30px;
+      max-width: 500px;
+      margin: auto;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    }
+
+    h1 {
+      color: #bb377d;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      background-color: #bb377d;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #a92f6d;
+    }
+  </style>
+</head>
+<body>
+  <div class="convite">
+    <h1>Convite Especial 🎶</h1>
+    <p>Oi, meu bem 💕</p>
+    <p>Gostaria de te convidar para viver uma noite incrível comigo.<br>
+    Que tal irmos juntos a um show musical, cheio de emoção, boa música e momentos só nossos?</p>
+    <p><strong>Data:</strong> 07/06/2025<br>
+       <strong>Local:</strong> Arena das dunas</p>
+    <p>Vai ser especial porque estarei com você. Topa ir comigo?</p>
+    <button class="btn" onclick="showConfetti()">Sim, eu topo! 💖</button>
+  </div>
+  
+  <!-- Script do confetti via CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+  <script>
+    function showConfetti() {
+      // Confete ao clicar
+      confetti({
+        particleCount: 150,
+        spread: 70,
+        origin: { y: 0.6 }
+      });
+    }
+  </script>
+</body>
+</html>
